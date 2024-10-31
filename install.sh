@@ -27,7 +27,7 @@ mkdir -p $INSTALL_DIR
 python3 -m venv $INSTALL_DIR/venv
 
 # Install the package
-$INSTALL_DIR/venv/bin/pip install git+https://github.com/yourusername/gopro-synapse.git
+$INSTALL_DIR/venv/bin/pip install git+https://github.com/armanddp/synapse.git
 
 # Create systemd service
 cat > /etc/systemd/system/gopro-livestream.service << EOL
