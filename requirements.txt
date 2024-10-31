@@ -1,0 +1,4 @@
+open-gopro
+rich
+typing-extensions
+bleak
