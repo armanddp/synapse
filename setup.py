@@ -5,10 +5,10 @@ setup(
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
-        'open-gopro>=0.14.0',
-        'rich>=13.0.0',
-        'typing-extensions>=4.0.0',
-        'bleak>=0.21.1',
+        'open-gopro',
+        'rich',
+        'typing-extensions',
+        'bleak',
     ],
     entry_points={
         'console_scripts': [
