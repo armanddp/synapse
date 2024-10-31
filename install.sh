@@ -26,6 +26,7 @@ mkdir -p $INSTALL_DIR
 # Create virtual environment
 python3 -m venv $INSTALL_DIR/venv
 
+$INSTALL_DIR/venv/bin/pip install hatch
 # Install the package
 $INSTALL_DIR/venv/bin/pip install git+https://github.com/armanddp/synapse.git
 

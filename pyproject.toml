@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gopro-synapse"
+version = "0.1.0"
+description = "A GoPro livestreaming service for Raspberry Pi"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+authors = [
+    { name = "Armand du Plessis", email = "adp@livelabs.ventures" },
+]
+dependencies = [
+    "open-gopro",
+    "rich",
+    "typing-extensions",
+    "bleak",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+Homepage = "https://github.com/armanddp/synapse"
+Repository = "https://github.com/armanddp/synapse.git"
+
+[project.scripts]
+gosynapse = "gosynapse.scripts.gosynapse_cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["gosynapse"]
+
+[tool.hatch.build]
+include = [
+    "gosynapse/**/*.py",
+    "gosynapse/config/*.ini",
+]
