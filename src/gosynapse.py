@@ -85,8 +85,8 @@ async def main(args: argparse.Namespace) -> None:
 
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Start a GoPro livestream with auto-restart capability.")
-    parser.add_argument("--ssid", type=str, help="WiFi SSID to connect to.", default="gopro2")
-    parser.add_argument("--password", type=str, help="Password of WiFi SSID.", default="gopro123")
+    parser.add_argument("--ssid", type=str, help="WiFi SSID to connect to.", default="The Matterhorn Bivacco")
+    parser.add_argument("--password", type=str, help="Password of WiFi SSID.", default="ismoresecure!")
     parser.add_argument("--url", type=str, help="RTMP server URL to stream to.", default="rtmp://192.168.8.17/live/gopro2")
     parser.add_argument("--min_bit", type=int, help="Minimum bitrate.", default=1000)
     parser.add_argument("--max_bit", type=int, help="Maximum bitrate.", default=5500)
